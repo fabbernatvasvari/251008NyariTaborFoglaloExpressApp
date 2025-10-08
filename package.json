@@ -19,5 +19,13 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabbernatvasvari/251008NyariTaborFoglaloExpressApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fabbernatvasvari/251008NyariTaborFoglaloExpressApp/issues"
+  },
+  "homepage": "https://github.com/fabbernatvasvari/251008NyariTaborFoglaloExpressApp#readme"
 }
