@@ -1,10 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+function MainComponent() {
 
   return (
     <>
@@ -15,11 +11,22 @@ function App() {
           <li><a href="/camps">Táborok böngészése</a></li>
           <li><a href="/addcamp">Új tábor</a></li>
           <li><a href="/addlocation">Új táborhelyszín</a></li>
-          <li><a href="/completed">Jelentkezéseim</a></li>
+          <li><a href="/applications">Jelentkezéseim</a></li>
+          @if (isLoggedIn) {
+          <li><a href="/profile">Profil</a></li>
+          }
+
+          @if (!isLoggedIn) {
+          <li><a href="/login">Bejelentkezés</a></li>
+          }
+
+          @if (isLoggedIn) {
+          <li><a href="#">Kijelentkezés</a></li>
+          }
         </ul>
       </nav>
     </>
   )
 }
 
-export default App
+export default MainComponent
