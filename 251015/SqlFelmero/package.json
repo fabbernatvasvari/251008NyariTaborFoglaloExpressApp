@@ -1,0 +1,18 @@
+{
+    
+    "scripts": {
+        "start": "node db.js"
+    },
+    "dependencies": {
+        "better-sqlite3": "^12.4.1"
+    },
+    "name": "251015",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "",
+    "main": "db.js",
+    "devDependencies": {},
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
