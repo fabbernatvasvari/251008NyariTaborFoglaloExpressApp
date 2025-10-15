@@ -3,8 +3,10 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import { usersRoutes } from 'react-router-dom';
-import {postRoutes } from 'react-router-dom';
+import usersRoutes from './routes/usersRoutes.js';
+import postRoutes from './routes/postRoutes.js';
+
+import db from './db.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -20,3 +22,5 @@ app.listen(PORT, () => {
 
 app.use(cors());
 app.use(bodyParser.json());
+
+db;

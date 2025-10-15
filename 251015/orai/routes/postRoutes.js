@@ -1,6 +1,8 @@
 import express      from 'express';
+import * as Post from '../data/post.js';
 
-const router = express.Router();
+const router = Router();
+
 
 router.get('/', (req, res) => {
     res.send('GET request to the posts');
