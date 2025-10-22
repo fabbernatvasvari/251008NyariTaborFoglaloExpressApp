@@ -32,8 +32,7 @@ export function MainComponent() {
   return (
     <>
       <main>
-        <img src={campLogo} alt='A Nyári Tábor Foglaló ikonja' />
-        <div><Link to="/home">Nyári Tábor Foglaló</Link></div>
+        
 
         <nav>
           <ul>
@@ -69,9 +68,9 @@ export function MainComponent() {
 
             <div>
               <h2>Beszélgess AI Tábor Foglalóval👇</h2>
-                <img src={chatbotIcon} className="forog logo" alt="AI tábor foglaló Chatbot asszisztens" />
-                <img src={chatbotIcon} className="forog logo" alt="AI tábor foglaló Chatbot asszisztens" />
-                <img src={chatbotIcon} className="forog logo" alt="AI tábor foglaló Chatbot asszisztens" />
+              <img src={chatbotIcon} className="forog logo" alt="AI tábor foglaló Chatbot asszisztens" />
+              <img src={chatbotIcon} className="forog logo" alt="AI tábor foglaló Chatbot asszisztens" />
+              <img src={chatbotIcon} className="forog logo" alt="AI tábor foglaló Chatbot asszisztens" />
               <div className="scroll-arrow">
                 <span className="arrow-text">Görgess Lejjebb a Galériához</span>
                 <div className="arrow">
@@ -81,24 +80,77 @@ export function MainComponent() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className='gallery'>
               <h2>Tábori galéria🖼🎨👇</h2>
               <div>
-                <img src={cserkesztabor} className="logo" alt="Cserkésztábor" style={{ width: '50%', height: '50%' }} />
-                <img src={drcode} className="logo" alt="Dr. Code Tábor" style={{ width: '50%', height: '50%' }} />
-                <img src={forestSummerCamp} className="logo" alt="Forest Summer Camp" style={{ width: '50%', height: '50%' }} />
-                <img src={childrenLyingInGrass} className="logo" alt="Gyerekek a fűben" style={{ width: '50%', height: '50%' }} />
-                <img src={islandCamp} className="logo" alt="Szigeti tábor" style={{ width: '50%', height: '50%' }} />
-                <img src={nyariTabor} className="logo" alt="Nyári tábor" style={{ width: '50%', height: '50%' }} />
-                <img src={szentMargit} className="logo" alt="Szent Margit Tábor" style={{ width: '50%', height: '50%' }} />
-                <img src={szinjatszotabor} className="logo" alt="Színjátszó tábor" style={{ width: '50%', height: '50%' }} />
-                <img src={tabortuzJatekok} className="logo" alt="Tábortűz játékok" style={{ width: '50%', height: '50%' }} />
-                <img src={zankaiElmenytabor} className="logo" alt="Zánkai Élménytábor" style={{ width: '50%', height: '50%' }} />
+                <div>
+
+                  <img src={cserkesztabor} className="logo" alt="Cserkésztábor" style={{ width: '50%', height: '50%' }} />
+                  <h3>Cserkésztábor</h3>
+                  <p>Kalandok és természetfelfedezés kerületi cserkésztáborainkban!</p>
+                </div>
+                <div>
+                  <img src={tabortuzJatekok} className="logo" alt="Tábortűz játékok" style={{ width: '50%', height: '50%' }} />
+
+                  <h3>Tábor Erdély egzotikus hegyeiben</h3>
+                  <p>Meghitt esték közös énekléssel és tábortűzzel a csillagos ég alatt.</p>
+                </div>
+                <div>
+
+                  <img src={drcode} className="logo" alt="Dr. Code Tábor" style={{ width: '50%', height: '50%' }} />
+
+                  <h3>Programozás és robotika táborok</h3>
+                  <p>Modern technológiai kalandok a Dr. Code szervezésével! - Tanulás játékosan.</p>
+                </div>
+                <div>
+
+                  <img src={forestSummerCamp} className="logo" alt="Forest Summer Camp" style={{ width: '50%', height: '50%' }} />
+
+                  <h3>Erdei vándortábor</h3>
+                  <p>A múlt évi nyári erdei vándortáborok legjobb pillanatai :D . Hátizsákkal, barátokkal lenyűgöző természeti
+                    tájakon át vezetett az út! :O</p>
+                </div>
+                <div>
+                  <img src={childrenLyingInGrass} className="logo" alt="Gyerekek a fűben" style={{ width: '50%', height: '50%' }} />
+                  <h3>Közösségi programok</h3>
+                  <p>Kreatív és közösségépítő foglalkozások, ahol mindenki megtalálja a helyét.</p>
+                </div>
+                <div>
+
+                  <img src={islandCamp} className="logo" alt="Szigeti tábor" style={{ width: '50%', height: '50%' }} />
+                  <h3>Cserkésztábor Izlandon</h3>
+                  <p>Ez egy egyedülálló kép az izlandi cserkésztáborokról! Gejzírek, lenyűgöző tájak és különleges programok
+                    izland szigetén.</p>
+                </div>
+                <div>
+                  <img src={nyariTabor} className="logo" alt="Nyári tábor" style={{ width: '50%', height: '50%' }} />
+
+                  <h3>Fonyódligeti Erzsébet-táborok</h3>
+                  <p>Minden évben egész nyáron várjuk a gyermekeket, most már 3 helyszínen!</p>
+                </div>
+                <div>
+                  <img src={szentMargit} className="logo" alt="Szent Margit Tábor" style={{ width: '50%', height: '50%' }} />
+
+                  <h3>Szent Margit cserkésztábor</h3>
+                  <p>Egy cserkészcsapat, ahol a hagyományok, tanulás, közösség és a játék kéz a kézben járnak.</p>
+                </div>
+                <div>
+                  <img src={szinjatszotabor} className="logo" alt="Színjátszó tábor" style={{ width: '50%', height: '50%' }} />
+
+                  <h3>Színjátszótábor</h3>
+                  <p>Fedezd fel a benned rejlő színészt! Előadások, szerepjátékok, improvizációk.</p>
+                </div>
+                <div>
+
+                  <img src={zankaiElmenytabor} className="logo" alt="Zánkai Élménytábor" style={{ width: '50%', height: '50%' }} />
+                  <h3>Zánkai élménytábor</h3>
+                  <p>Vidám és változatos programok Magyarország legnagyobb táborában, a Balaton partján &#45; számíthahsz ránk,
+                    számítunk rád!</p></div>
               </div>
             </div>
           </div>
         </div>
-    </main >
+      </main >
     </>
   )
 }
