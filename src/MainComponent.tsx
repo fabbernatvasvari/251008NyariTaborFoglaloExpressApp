@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
+import chatbotIcon from '/chatbot-icon.jpg' 
 
 function Home() {
   return <h1>Home Page</h1>;
@@ -47,9 +48,19 @@ export function MainComponent() {
             )}
           </ul>
         </nav>
-        <h1>Üdvözlünk a Nyári Tábor Foglaló honlapján!</h1>
+        <div>
 
-        <h2>Itt böngészhetsz táborokat, vagy regisztrálhatsz, bejelentkezhetsz, hogy kezelhesd a profilod.</h2>
+          <h1>Üdvözlünk a Nyári Tábor Foglaló honlapján!</h1>
+
+          <h2>Itt böngészhetsz táborokat, vagy regisztrálhatsz, bejelentkezhetsz, hogy kezelhesd a profilod.</h2>
+          <div className='images'>
+            <div>
+              <a href="https://vite.dev" target="_blank">
+                <img src={chatbotIcon} className="logo" alt="Vite logo" />
+              </a>
+            </div>
+          </div>
+        </div>
       </main>
     </>
   )
