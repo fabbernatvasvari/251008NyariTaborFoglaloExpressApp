@@ -16,41 +16,41 @@ function Contact() {
 
 export function MainComponent() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  
+
   return (
     <>
-    <main>
-      <div><Link to="/home">Nyári Tábor Foglaló</Link></div>
+      <main>
+        <div><Link to="/home">Nyári Tábor Foglaló</Link></div>
 
-      <nav>
-        <ul>
-          {isLoggedIn && (
-            <li><Link to="/profile">Profil</Link></li>
-          )}
+        <nav>
+          <ul>
+            {isLoggedIn && (
+              <li><Link to="/profile">Profil</Link></li>
+            )}
 
-          {!isLoggedIn && (
-            <>
-            <li><Link to="/signup">Regisztráció</Link></li>
-            <li><Link to="/login">Bejelentkezés</Link></li>
-            </>
-          )}
+            {!isLoggedIn && (
+              <>
+                <li><Link to="/signup">Regisztráció</Link></li>
+                <li><Link to="/login">Bejelentkezés</Link></li>
+              </>
+            )}
 
-          {isLoggedIn && (
-            <>
-            <li>
-              <Link to="/logout">Kijelentkezés</Link>
-            </li>
-            <li><Link to="/addcamp">Új tábor</Link></li>
-          <li><Link to="/addlocation">Új táborhelyszín</Link></li>
-          <li><Link to="/applications">Jelentkezéseim</Link></li>
-</>
-          )}
-        </ul>
-      </nav>  
-      <h1>Üdvözlünk a Nyári Tábor Foglaló honlapján!</h1>
+            {isLoggedIn && (
+              <>
+                <li>
+                  <Link to="/logout">Kijelentkezés</Link>
+                </li>
+                <li><Link to="/addcamp">Új tábor</Link></li>
+                <li><Link to="/addlocation">Új táborhelyszín</Link></li>
+                <li><Link to="/applications">Jelentkezéseim</Link></li>
+              </>
+            )}
+          </ul>
+        </nav>
+        <h1>Üdvözlünk a Nyári Tábor Foglaló honlapján!</h1>
 
-<h2>Itt böngészhetsz táborokat, vagy regisztrálhatsz, bejelentkezhetsz, hogy kezelhesd a profilod.</h2>      
-    </main>
+        <h2>Itt böngészhetsz táborokat, vagy regisztrálhatsz, bejelentkezhetsz, hogy kezelhesd a profilod.</h2>
+      </main>
     </>
   )
 }
