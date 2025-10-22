@@ -1,4 +1,4 @@
-import './App.css'
+import './MainComponent.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 import chatbotIcon from '/chatbot-icon.jpg' 
