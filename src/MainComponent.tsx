@@ -79,18 +79,18 @@ export function MainComponent() {
               </a>
               <br />
               <div>
-                <h2>Képek👇</h2>
+                <h2>Tábori galéria🖼🎨👇</h2>
                 <div>
-                  <img src={cserkesztabor} className="logo" alt="Cserkésztábor" />
-                  <img src={drcode} className="logo" alt="Dr. Code Tábor" />
-                  <img src={forestSummerCamp} className="logo" alt="Forest Summer Camp" />
-                  <img src={childrenLyingInGrass} className="logo" alt="Gyerekek a fűben" />
-                  <img src={islandCamp} className="logo" alt="Szigeti tábor" />
-                  <img src={nyariTabor} className="logo" alt="Nyári tábor" />
-                  <img src={szentMargit} className="logo" alt="Szent Margit Tábor" />
-                  <img src={szinjatszotabor} className="logo" alt="Színjátszó tábor" />
-                  <img src={tabortuzJatekok} className="logo" alt="Tábortűz játékok" />
-                  <img src={zankaiElmenytabor} className="logo" alt="Zánkai Élménytábor" />
+                  <img src={cserkesztabor} className="logo" alt="Cserkésztábor" style={{ width: '50%', height: '50%' }} />
+                  <img src={drcode} className="logo" alt="Dr. Code Tábor"  style={{ width: '50%', height: '50%' }} />
+                  <img src={forestSummerCamp} className="logo" alt="Forest Summer Camp" style={{ width: '50%', height: '50%' }}  />
+                  <img src={childrenLyingInGrass} className="logo" alt="Gyerekek a fűben"  style={{ width: '50%', height: '50%' }} />
+                  <img src={islandCamp} className="logo" alt="Szigeti tábor" style={{ width: '50%', height: '50%' }}  />
+                  <img src={nyariTabor} className="logo" alt="Nyári tábor" style={{ width: '50%', height: '50%' }}  />
+                  <img src={szentMargit} className="logo" alt="Szent Margit Tábor"  style={{ width: '50%', height: '50%' }} />
+                  <img src={szinjatszotabor} className="logo" alt="Színjátszó tábor"  style={{ width: '50%', height: '50%' }} />
+                  <img src={tabortuzJatekok} className="logo" alt="Tábortűz játékok"  style={{ width: '50%', height: '50%' }} />
+                  <img src={zankaiElmenytabor} className="logo" alt="Zánkai Élménytábor"  style={{ width: '50%', height: '50%' }} />
                 </div>
               </div>
             </div>
