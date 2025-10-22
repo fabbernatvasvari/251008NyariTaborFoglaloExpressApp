@@ -77,26 +77,33 @@ export function MainComponent() {
               <a href="https://vite.dev" target="_blank">
                 <img src={chatbotIcon} className="logo" alt="Vite logo" />
               </a>
-              <br />
-              <div>
-                <h2>Tábori galéria🖼🎨👇</h2>
-                <div>
-                  <img src={cserkesztabor} className="logo" alt="Cserkésztábor" style={{ width: '50%', height: '50%' }} />
-                  <img src={drcode} className="logo" alt="Dr. Code Tábor"  style={{ width: '50%', height: '50%' }} />
-                  <img src={forestSummerCamp} className="logo" alt="Forest Summer Camp" style={{ width: '50%', height: '50%' }}  />
-                  <img src={childrenLyingInGrass} className="logo" alt="Gyerekek a fűben"  style={{ width: '50%', height: '50%' }} />
-                  <img src={islandCamp} className="logo" alt="Szigeti tábor" style={{ width: '50%', height: '50%' }}  />
-                  <img src={nyariTabor} className="logo" alt="Nyári tábor" style={{ width: '50%', height: '50%' }}  />
-                  <img src={szentMargit} className="logo" alt="Szent Margit Tábor"  style={{ width: '50%', height: '50%' }} />
-                  <img src={szinjatszotabor} className="logo" alt="Színjátszó tábor"  style={{ width: '50%', height: '50%' }} />
-                  <img src={tabortuzJatekok} className="logo" alt="Tábortűz játékok"  style={{ width: '50%', height: '50%' }} />
-                  <img src={zankaiElmenytabor} className="logo" alt="Zánkai Élménytábor"  style={{ width: '50%', height: '50%' }} />
+              <div className="scroll-arrow">
+                <span className="arrow-text">Görgess Lejjebb a Galériához</span>
+                <div className="arrow">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
+              </div>
+            </div>
+            <div>
+              <h2>Tábori galéria🖼🎨👇</h2>
+              <div>
+                <img src={cserkesztabor} className="logo" alt="Cserkésztábor" style={{ width: '50%', height: '50%' }} />
+                <img src={drcode} className="logo" alt="Dr. Code Tábor" style={{ width: '50%', height: '50%' }} />
+                <img src={forestSummerCamp} className="logo" alt="Forest Summer Camp" style={{ width: '50%', height: '50%' }} />
+                <img src={childrenLyingInGrass} className="logo" alt="Gyerekek a fűben" style={{ width: '50%', height: '50%' }} />
+                <img src={islandCamp} className="logo" alt="Szigeti tábor" style={{ width: '50%', height: '50%' }} />
+                <img src={nyariTabor} className="logo" alt="Nyári tábor" style={{ width: '50%', height: '50%' }} />
+                <img src={szentMargit} className="logo" alt="Szent Margit Tábor" style={{ width: '50%', height: '50%' }} />
+                <img src={szinjatszotabor} className="logo" alt="Színjátszó tábor" style={{ width: '50%', height: '50%' }} />
+                <img src={tabortuzJatekok} className="logo" alt="Tábortűz játékok" style={{ width: '50%', height: '50%' }} />
+                <img src={zankaiElmenytabor} className="logo" alt="Zánkai Élménytábor" style={{ width: '50%', height: '50%' }} />
               </div>
             </div>
           </div>
         </div>
-      </main>
+    </main >
     </>
   )
 }
