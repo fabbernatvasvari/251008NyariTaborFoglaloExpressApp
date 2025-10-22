@@ -52,7 +52,7 @@ li {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a .logo {
+  .forog.logo {
     animation: logo-spin infinite 20s linear;
   }
 }

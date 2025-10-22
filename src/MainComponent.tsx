@@ -68,15 +68,9 @@ export function MainComponent() {
 
             <div>
               <h2>Beszélgess AI Tábor Foglalóval👇</h2>
-              <a href="https://vite.dev" target="_blank">
-                <img src={chatbotIcon} className="logo" alt="Vite logo" />
-              </a>
-              <a href="https://vite.dev" target="_blank">
-                <img src={chatbotIcon} className="logo" alt="Vite logo" />
-              </a>
-              <a href="https://vite.dev" target="_blank">
-                <img src={chatbotIcon} className="logo" alt="Vite logo" />
-              </a>
+                <img src={chatbotIcon} className="forog logo" alt="Vite logo" />
+                <img src={chatbotIcon} className="forog logo" alt="Vite logo" />
+                <img src={chatbotIcon} className="forog logo" alt="Vite logo" />
               <div className="scroll-arrow">
                 <span className="arrow-text">Görgess Lejjebb a Galériához</span>
                 <div className="arrow">
