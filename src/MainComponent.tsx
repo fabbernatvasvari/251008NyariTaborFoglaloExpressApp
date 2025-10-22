@@ -12,7 +12,7 @@ import szentMargit from '/szent_margit.jpg'
 import szinjatszotabor from '/szinjatszotabor.jpg'
 import tabortuzJatekok from '/tabortuz-jatekok.jpg'
 import zankaiElmenytabor from '/Zankai_Elmenytabor.jpg'
-
+import campLogo from '/app-logo-icons/favicon-96.png'
 
 function Home() {
   return <h1>Home Page</h1>;
@@ -32,6 +32,7 @@ export function MainComponent() {
   return (
     <>
       <main>
+        <img src={campLogo} alt='A Nyári Tábor Foglaló ikonja' />
         <div><Link to="/home">Nyári Tábor Foglaló</Link></div>
 
         <nav>
@@ -68,9 +69,9 @@ export function MainComponent() {
 
             <div>
               <h2>Beszélgess AI Tábor Foglalóval👇</h2>
-                <img src={chatbotIcon} className="forog logo" alt="Vite logo" />
-                <img src={chatbotIcon} className="forog logo" alt="Vite logo" />
-                <img src={chatbotIcon} className="forog logo" alt="Vite logo" />
+                <img src={chatbotIcon} className="forog logo" alt="AI tábor foglaló Chatbot asszisztens" />
+                <img src={chatbotIcon} className="forog logo" alt="AI tábor foglaló Chatbot asszisztens" />
+                <img src={chatbotIcon} className="forog logo" alt="AI tábor foglaló Chatbot asszisztens" />
               <div className="scroll-arrow">
                 <span className="arrow-text">Görgess Lejjebb a Galériához</span>
                 <div className="arrow">
