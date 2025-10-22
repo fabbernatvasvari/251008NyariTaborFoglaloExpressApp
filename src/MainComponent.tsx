@@ -54,7 +54,14 @@ export function MainComponent() {
 
           <h2>Itt böngészhetsz táborokat, vagy regisztrálhatsz, bejelentkezhetsz, hogy kezelhesd a profilod.</h2>
           <div className='images'>
+            <h2>Képek👇</h2>
             <div>
+              <a href="https://vite.dev" target="_blank">
+                <img src={chatbotIcon} className="logo" alt="Vite logo" />
+              </a>
+              <a href="https://vite.dev" target="_blank">
+                <img src={chatbotIcon} className="logo" alt="Vite logo" />
+              </a>
               <a href="https://vite.dev" target="_blank">
                 <img src={chatbotIcon} className="logo" alt="Vite logo" />
               </a>
