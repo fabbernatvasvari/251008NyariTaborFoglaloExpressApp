@@ -18,50 +18,40 @@ export function MainComponent() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   
   return (
-    <BrowserRouter>
+    <>
     <main>
       <div><Link to="/home">Nyári Tábor Foglaló</Link></div>
 
-      {/* Navigation */}
-      <nav>
-        <Link to="/">Home</Link> | {" "}
-        <Link to="/about">About</Link> | {" "}
-        <Link to="/contact">Contact</Link>
-      </nav>
-
-      {/* Routes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-
-      
       <nav>
         <ul>
-          <li><Link to="/home">Főoldal</Link></li>
-          <li><Link to="/camps">Táborok böngészése</Link></li>
-          <li><Link to="/addcamp">Új tábor</Link></li>
-          <li><Link to="/addlocation">Új táborhelyszín</Link></li>
-          <li><Link to="/applications">Jelentkezéseim</Link></li>
-
           {isLoggedIn && (
             <li><Link to="/profile">Profil</Link></li>
           )}
 
           {!isLoggedIn && (
+            <>
+            <li><Link to="/signup">Regisztráció</Link></li>
             <li><Link to="/login">Bejelentkezés</Link></li>
+            </>
           )}
 
           {isLoggedIn && (
+            <>
             <li>
-              <button onClick={() => setIsLoggedIn(false)}>Kijelentkezés</button>
+              <Link to="/logout">Kijelentkezés</Link>
             </li>
+            <li><Link to="/addcamp">Új tábor</Link></li>
+          <li><Link to="/addlocation">Új táborhelyszín</Link></li>
+          <li><Link to="/applications">Jelentkezéseim</Link></li>
+</>
           )}
         </ul>
-      </nav>        
+      </nav>  
+      <h1>Üdvözlünk a Nyári Tábor Foglaló honlapján!</h1>
+
+<h2>Itt böngészhetsz táborokat, vagy regisztrálhatsz, bejelentkezhetsz, hogy kezelhesd a profilod.</h2>      
     </main>
-    </BrowserRouter>
+    </>
   )
 }
 
